@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get More Electrical Jobs from Google | Review Growth System</title>
+    <meta name="description" content="We help electricians get 5–15 new 5-star Google reviews per month and stop bad reviews before they hurt your business.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (via CDN for single file simplicity) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a', // Slate 900
+                            card: '#1e293b', // Slate 800
+                            yellow: '#facc15', // Yellow 400
+                            red: '#ef4444',
+                            green: '#22c55e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .highlight-text {
+            color: #facc15;
+        }
+        .step-arrow::after {
+            content: '';
+            @apply absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans">
+
+    <!-- 1. HERO SECTION -->
+    <header class="relative pt-20 pb-24 lg:pt-32 lg:pb-40 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <!-- Abstract circuit board pattern or gradient -->
+            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 L100 0 L100 100 Z" fill="#facc15" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center max-w-4xl">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow mb-8 animate-fade-in-up">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+                <span class="text-sm font-semibold tracking-wide uppercase">For Electricians Only</span>
+            </div>
+            
+            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
+                Get More Electrical Jobs from Google <span class="highlight-text block mt-2">Without Spending More on Ads</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                We help electricians get 5–15 new 5-star Google reviews per month and stop bad reviews before they hurt your business.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button onclick="openModal()" class="group relative bg-brand-yellow text-brand-dark font-heading font-bold text-lg px-8 py-4 rounded-lg shadow-[0_0_20px_rgba(250,204,21,0.3)] hover:shadow-[0_0_30px_rgba(250,204,21,0.5)] hover:scale-105 transition-all duration-300">
+                    Get a Free Google Review Audit
+                    <span class="block text-xs font-normal opacity-80 mt-1">(Takes 2 minutes)</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. THE PAIN SECTION ("The Red Flag") -->
+    <section class="py-20 bg-brand-dark relative border-t border-slate-800">
+        <!-- Red glow effect -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-red-900/10 blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10 max-w-4xl">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-500/10 text-red-500 mb-6">
+                    <i data-lucide="alert-triangle" class="w-8 h-8"></i>
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
+                    One Bad Review Can Cost You Thousands
+                </h2>
+                <p class="text-slate-300 text-lg">
+                    When homeowners search <span class="text-white font-semibold italic">"electrician near me"</span>, they don’t compare everyone. They click the business that looks the most trusted on Google.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Pain Point 1 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-red-500/20 hover:border-red-500/40 transition-colors">
+                    <div class="text-red-400 mb-4"><i data-lucide="x-circle" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-white mb-2">Old Reviews Kill Trust</h3>
+                    <p class="text-slate-400 text-sm">Customers ignore listings with reviews from 6 months ago.</p>
+                </div>
+                <!-- Pain Point 2 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-red-500/20 hover:border-red-500/40 transition-colors">
+                    <div class="text-red-400 mb-4"><i data-lucide="trending-down" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-white mb-2">Lost to Competitors</h3>
+                    <p class="text-slate-400 text-sm">Better electricians lose jobs to worse ones purely because of perception.</p>
+                </div>
+                <!-- Pain Point 3 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-red-500/20 hover:border-red-500/40 transition-colors">
+                    <div class="text-red-400 mb-4"><i data-lucide="dollar-sign" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-white mb-2">Price Shoppers</h3>
+                    <p class="text-slate-400 text-sm">Without strong social proof, you only compete on price.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. AUTHORITY SECTION (The Google Truth) -->
+    <section class="py-20 bg-white text-brand-dark">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">
+                        How Google Actually Chooses Who Ranks First
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-8">
+                        Most electricians think it's about years in business or skill. <strong class="text-brand-dark">It's not.</strong> Google ranks <span class="bg-brand-yellow/30 px-1">Trust</span>.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-green flex-shrink-0 mt-1"></i>
+                            <div>
+                                <span class="font-bold text-lg">Review Velocity</span>
+                                <p class="text-slate-600">Recent reviews matter more than total count.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-green flex-shrink-0 mt-1"></i>
+                            <div>
+                                <span class="font-bold text-lg">Consistent Activity</span>
+                                <p class="text-slate-600">A steady stream of feedback signals you are active.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-green flex-shrink-0 mt-1"></i>
+                            <div>
+                                <span class="font-bold text-lg">Fewer Public Complaints</span>
+                                <p class="text-slate-600">Intercepting negatives keeps your ratio high.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 p-4 bg-slate-100 border-l-4 border-brand-yellow rounded-r-lg">
+                        <p class="font-bold italic text-slate-700">
+                            "This is why smaller electrical companies often outrank bigger ones."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Abstract representation of Google Maps Ranking -->
+                    <div class="bg-slate-100 rounded-2xl p-6 shadow-xl border border-slate-200">
+                        <div class="flex items-center gap-4 mb-6 pb-6 border-b border-slate-200">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-xl">1</div>
+                            <div class="flex-1">
+                                <div class="h-4 bg-slate-800 rounded w-3/4 mb-2"></div>
+                                <div class="flex gap-1 text-brand-yellow">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <span class="text-slate-500 text-xs ml-2 text-black font-bold">New Review 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 opacity-50">
+                            <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-xl">2</div>
+                            <div class="flex-1">
+                                <div class="h-4 bg-slate-400 rounded w-1/2 mb-2"></div>
+                                <div class="flex gap-1 text-slate-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4"></i>
+                                    <span class="text-slate-500 text-xs ml-2">Last review 6 months ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SOLUTION (The Mechanism) -->
+    <section class="py-20 bg-brand-dark border-t border-slate-800">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
+                    We Handle Your Google Reviews So You Don’t Have To
+                </h2>
+                <p class="text-brand-yellow font-medium text-lg">No apps. No chasing reviews. No awkward asks.</p>
+            </div>
+
+            <!-- The Flow -->
+            <div class="grid md:grid-cols-4 gap-8 relative">
+                <!-- Connector Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-brand-card via-brand-yellow/50 to-brand-card -z-10"></div>
+
+                <!-- Step 1 -->
+                <div class="text-center relative bg-brand-dark p-4">
+                    <div class="w-24 h-24 mx-auto bg-brand-card border-2 border-slate-700 rounded-full flex items-center justify-center text-white mb-6 shadow-lg relative z-10">
+                        <i data-lucide="wrench" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">1. Job Completed</h3>
+                    <p class="text-slate-400 text-sm">You finish the electrical work.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center relative bg-brand-dark p-4">
+                    <div class="w-24 h-24 mx-auto bg-brand-card border-2 border-brand-yellow rounded-full flex items-center justify-center text-brand-yellow mb-6 shadow-[0_0_15px_rgba(250,204,21,0.2)] relative z-10">
+                        <i data-lucide="send" class="w-10 h-10 ml-1"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">2. Auto Request</h3>
+                    <p class="text-slate-400 text-sm">System sends SMS & Email automatically.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center relative bg-brand-dark p-4">
+                    <div class="w-24 h-24 mx-auto bg-brand-card border-2 border-green-500 rounded-full flex items-center justify-center text-green-500 mb-6 shadow-lg relative z-10">
+                        <i data-lucide="thumbs-up" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">3. Happy Customers</h3>
+                    <p class="text-slate-400 text-sm">Routed directly to <strong class="text-white">Google Maps</strong>.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center relative bg-brand-dark p-4">
+                    <div class="w-24 h-24 mx-auto bg-brand-card border-2 border-slate-600 rounded-full flex items-center justify-center text-slate-400 mb-6 shadow-lg relative z-10">
+                        <i data-lucide="shield-alert" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">4. Unhappy Customers</h3>
+                    <p class="text-slate-400 text-sm">Routed to <strong class="text-white">Private Feedback</strong> form.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. OUTCOMES (The Green Zone) -->
+    <section class="py-20 bg-brand-card/50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-3xl font-bold text-white mb-6">
+                        What This Gets You
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-200">
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-brand-yellow"></i>
+                            More inbound calls from Google Maps
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-200">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-brand-yellow"></i>
+                            Higher trust before price is discussed
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-200">
+                            <i data-lucide="users" class="w-5 h-5 text-brand-yellow"></i>
+                            Fewer price shoppers
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-200">
+                            <i data-lucide="lock" class="w-5 h-5 text-brand-yellow"></i>
+                            Protection from reputation damage
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-green-900/20 border border-green-500/30 p-8 rounded-xl text-center">
+                    <p class="text-green-400 font-heading font-bold text-2xl leading-tight">
+                        "One extra electrical job usually pays for the entire month."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. OFFER & PRICING -->
+    <section class="py-20 bg-brand-dark">
+        <div class="container mx-auto px-6 max-w-lg">
+            <div class="bg-brand-card rounded-2xl border-2 border-brand-yellow shadow-[0_0_40px_rgba(250,204,21,0.1)] overflow-hidden">
+                <div class="bg-brand-yellow p-4 text-center">
+                    <h3 class="text-brand-dark font-bold text-xl uppercase tracking-wider">Simple Pricing. Zero Risk.</h3>
+                </div>
+                
+                <div class="p-8 text-center">
+                    <div class="mb-2">
+                        <span class="text-5xl font-heading font-bold text-white">$299</span>
+                        <span class="text-slate-400">/month</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-8">Per location. Month-to-month. No contracts.</p>
+                    
+                    <div class="text-left space-y-4 mb-8 pl-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-brand-yellow/10 p-1 rounded"><i data-lucide="check" class="w-4 h-4 text-brand-yellow"></i></div>
+                            <span class="text-slate-200">Automated review requests</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-brand-yellow/10 p-1 rounded"><i data-lucide="check" class="w-4 h-4 text-brand-yellow"></i></div>
+                            <span class="text-slate-200">Negative review interception</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-brand-yellow/10 p-1 rounded"><i data-lucide="check" class="w-4 h-4 text-brand-yellow"></i></div>
+                            <span class="text-slate-200">Google review growth tracking</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-brand-yellow/10 p-1 rounded"><i data-lucide="check" class="w-4 h-4 text-brand-yellow"></i></div>
+                            <span class="text-slate-200">Monthly performance report</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 rounded-lg p-4 border border-white/10 mb-8">
+                        <p class="text-sm text-slate-300">
+                            <strong class="text-white block mb-1">THE GUARANTEE</strong>
+                            If you don’t get at least <span class="text-brand-yellow font-bold">5 new 5-star Google reviews</span> in 30 days, you don’t pay.
+                        </p>
+                    </div>
+
+                    <button onclick="openModal()" class="w-full bg-brand-yellow text-brand-dark font-heading font-bold text-lg py-4 rounded-lg hover:bg-white transition-colors">
+                        Start Free Audit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FINAL CTA -->
+    <section class="py-20 bg-brand-card border-t border-slate-800 text-center">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-8">
+                See Why Competitors Are Getting Picked First
+            </h2>
+            <button onclick="openModal()" class="bg-transparent border-2 border-white text-white font-heading font-bold text-lg px-10 py-4 rounded-lg hover:bg-white hover:text-brand-dark transition-all duration-300">
+                Get a Free Google Review Audit
+            </button>
+            <p class="mt-4 text-slate-500 text-sm">No credit card. No pressure.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-brand-dark border-t border-slate-900 text-center text-slate-600 text-sm">
+        <div class="container mx-auto px-6">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Electrician Review Growth System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="auditModal" class="fixed inset-0 z-50 hidden">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
+        
+        <!-- Content -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-brand-card p-8 rounded-2xl border border-slate-700 shadow-2xl animate-fade-in-up">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-500 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <h3 class="font-heading text-2xl font-bold text-white mb-2">Free Review Audit</h3>
+            <p class="text-slate-400 mb-6 text-sm">We'll analyze your Google listing and show you exactly where you're losing calls.</p>
+            
+            <form onsubmit="event.preventDefault(); alert('In a real deployment, this would send the lead to your email/CRM.'); closeModal();" class="space-y-4">
+                <div>
+                    <label class="block text-slate-400 text-xs uppercase font-bold mb-2">Company Name</label>
+                    <input type="text" required class="w-full bg-brand-dark border border-slate-700 rounded p-3 text-white focus:border-brand-yellow focus:outline-none transition-colors" placeholder="Joe's Electric">
+                </div>
+                <div>
+                    <label class="block text-slate-400 text-xs uppercase font-bold mb-2">Your Name</label>
+                    <input type="text" required class="w-full bg-brand-dark border border-slate-700 rounded p-3 text-white focus:border-brand-yellow focus:outline-none transition-colors" placeholder="Joe Smith">
+                </div>
+                <div>
+                    <label class="block text-slate-400 text-xs uppercase font-bold mb-2">Phone Number</label>
+                    <input type="tel" required class="w-full bg-brand-dark border border-slate-700 rounded p-3 text-white focus:border-brand-yellow focus:outline-none transition-colors" placeholder="(555) 123-4567">
+                </div>
+                
+                <button type="submit" class="w-full bg-brand-yellow text-brand-dark font-heading font-bold py-3 rounded mt-2 hover:bg-white transition-colors">
+                    Send My Audit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Modal Logic
+        function openModal() {
+            document.getElementById('auditModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            document.getElementById('auditModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
